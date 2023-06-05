@@ -11,3 +11,5 @@ class Post(models.Model):
     writer = models.ForeignKey(User, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now=True, null=True)
     
+    def __str__(self) -> str:
+        return self.title
