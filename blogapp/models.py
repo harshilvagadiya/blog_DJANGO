@@ -8,6 +8,6 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     body = models.TextField(max_length=500)
     slug = models.SlugField()
-    writer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="Comments....")
-    created = models.DateTimeField(auto_now=True,  null=True)
+    writer = models.ForeignKey(User, on_delete=models.CASCADE)
+    created = models.DateTimeField(auto_now=True, null=True)
     
