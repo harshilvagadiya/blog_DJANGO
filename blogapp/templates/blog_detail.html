@@ -42,9 +42,9 @@
           <div class="card-body">
             <form method="POST">
                 {% csrf_token %}
-              <!-- <div class="form-group">
+              {% comment %} <div class="form-group">
                 <textarea class="form-control" rows="3"></textarea>
-              </div> -->
+              </div>  {% endcomment %}
               {{form.commenter}}<br>
               {{form.body}}<br>
               <button type="submit" class="btn btn-primary">Submit</button>
