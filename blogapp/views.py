@@ -8,5 +8,5 @@ def index(request):
 
 def blog_detail(request, slug):
     post = Post.objects.get(slug=slug)
-    return render(request, 'blog_detail.html', {'blog_detail': blog_detail})
+    return render(request, 'blog_detail.html', {'post': post})
     

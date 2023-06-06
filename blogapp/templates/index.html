@@ -20,10 +20,10 @@
             <h2 class="card-title">{{post.title}}</h2>
             <p class="card-text">{{post.body | slice:':300' }}</p>
             {% comment %} <a href="#" class="btn btn-primary">Read More</a> {% endcomment %}
-            {% comment %} <a href="{% url 'blog_detail' post.slug %}" class="btn btn-primary">Read More</a> {% endcomment %}
+            <a href="{% url 'blog_detail' post.slug %}" class="btn btn-primary">Read More</a>
           </div>
           <div class="card-footer text-muted">
-            Posted on {{post.created_on}} by
+            Posted on {{post.created}} by
             <a href="#">{{post.writer}}</a>
           </div>
         </div>
